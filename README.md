@@ -94,6 +94,8 @@ Checks for active devices in the network
 - Performs ARP Table scan for active devices in the local network (excludes incomplete entries)
 
 
+port scanner and wireguard are to be included here in the future
+
 **Usage:**
 ```bash
 cd scripts/networking
