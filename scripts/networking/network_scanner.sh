@@ -15,9 +15,10 @@ MY_IP=$(ip -4 addr show | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | grep -v '127.0.0
 SUBNET=$(echo $MY_IP | cut -d. -f1-3)
 
 echo ">>>: Your IP: $MY_IP"
-echo ">>>: Scanning subnet: ${SUBNET}.0/24"
 echo ""
-echo "This may take a moment..."
+echo ">>> Scanning subnet: ${SUBNET}.0/24 <<<"
+echo ">>> Scanning for active devices..."
+echo ">>> This may take a moment..."
 echo ""
 
 
