@@ -23,6 +23,8 @@ Collection of automation and monitoring scripts for my Home Lab environment
 - Accessible from Windows Terminal/PowerShell
 - Github integration with SSH keys
 
+**Security services:**
+- SSHGuard on Ubuntu Server 24.04.3 LTS
 
 
 ## Monitoring scripts
