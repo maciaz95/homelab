@@ -17,8 +17,8 @@ SUBNET=$(echo $MY_IP | cut -d. -f1-3)
 echo ">>>: Your IP: $MY_IP"
 echo ""
 echo ">>> Scanning subnet: ${SUBNET}.0/24 <<<"
-echo ">>> Scanning for active devices..."
-echo ">>> This may take a moment..."
+echo ">>> Scanning for active devices... <<<"
+echo ">>> This may take a moment... <<<"
 echo ""
 
 
