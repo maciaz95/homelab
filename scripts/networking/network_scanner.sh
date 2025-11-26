@@ -28,7 +28,7 @@ echo ""
 if command -v nmap &> /dev/null; then
 	echo ">>> NMAP SCAN <<<"
 	echo ""
-	nmap -sn -PR ${SUBNET}.0/24
+	nmap -sn ${SUBNET}.0/24
 fi
 
 
