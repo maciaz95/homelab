@@ -25,7 +25,7 @@ Collection of automation and monitoring scripts for my Home Lab environment
 
 **Security services:**
 - SSHGuard on Ubuntu Server 24.04.3 LTS
-
+- MFA on SSH to be included later...
 
 ## Monitoring scripts
 
