@@ -33,6 +33,7 @@ Collection of automation and monitoring scripts for my Home Lab environment
 
 Basic script that diplays info about:
 
+- Checks current date
 - System uptime (uptime)
 - Disk usage (df -h)
 - Memory usage (free -h)
@@ -53,6 +54,7 @@ cd scripts/monitoring
 
 Monitors disk space usage and alerts when threshold is exceeded.
 
+- Checks current date
 - Default threshold: 80%
 - Checks root partition (/)
 - Shows current usage and available space (df -h, awk, sed)
@@ -71,11 +73,11 @@ cd scripts/automation
 
 Checks for failed login attempts via SSH
 
-- Checks current date (works)
+- Checks current date
 - Analyzes /var/log/auth.log file and passes the output to temporary report file
-- Checks for today's failed SSH attempts (works)
-- Alerts if login attempts exceeded 3 (works)
-- Displays raport (works)
+- Checks for today's failed SSH attempts
+- Alerts if login attempts exceeded 3
+- Displays raport
 
 
 **Usage:**
@@ -96,10 +98,28 @@ Checks for active devices in the network
 - Performs ARP Table scan for active devices in the local network (excludes incomplete entries)
 
 
-port scanner and wireguard are to be included here in the future
-
 **Usage:**
 ```bash
 cd scripts/networking
 ./network_scanner.sh
 ```
+
+### port_scanner.sh
+
+Scans for ports on specified host
+
+- Checks current date
+- Checks if a host was provided as an argument to the script
+- Displays the selected host
+- Asks for scan type (choose between 20 common ports or the defined range to be scanned)
+- Begins nmap scan and finishes the script after the scan is completed
+
+
+**Usage:**
+```bash
+cd scripts/networking
+./port_scanner.sh <target_host>
+```
+
+
+wireguard to be added in the future...
