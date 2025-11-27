@@ -41,8 +41,8 @@ case $choice in
 		echo "Scanning top 20 common ports..."
 		;;
 	2)
-		read -p "Enter port range (eg., 1-1000: " PORTS
-		echo "Scanning ports $PORTS..."
+		read -p "Enter port range (eg., 1-1000): " PORTS
+		echo "Scanning open ports $PORTS..."
 		;;
 	*)
 		echo "Invalid choice. Exiting..."
